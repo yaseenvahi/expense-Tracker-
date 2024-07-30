@@ -1,0 +1,248 @@
+/* Main Container Styling */
+.incomeimage {
+  margin-top: 100px;
+  height: 250px;
+  width: 500px;
+}
+
+.expense {
+  height: 250px;
+  width: 500px;
+}
+
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #f5f5f5, #ffebef); /* Gradient background */
+  background-image: url('../assets/homeback.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+/* Main Content Styling */
+.main-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-bottom: 20px;
+}
+
+/* Header and Section Styling */
+.income-section,
+.expense-input-section,
+.table-section {
+  margin-bottom: 20px;
+}
+
+/* Income and Expense Container Styling */
+.income-container,
+.expense-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Input and Button Styling */
+.income-inputs,
+.expense-inputs {
+  flex: 1;
+}
+
+.income-section input,
+.expense-input-section input,
+.expense-input-section select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px; /* Reduced padding */
+  width: calc(100% - 16px); /* Adjusted width */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.income-section button,
+.expense-input-section button {
+  padding: 8px 12px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100px; /* Set width for button */
+}
+
+.income-section button:hover,
+.expense-input-section button:hover {
+  background-color: #ff1493;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#delExp {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6666;
+  color: white;
+  cursor: pointer;
+}
+
+#delExp:hover {
+  background-color: #cc0000;
+}
+
+/* Chart Container Styling */
+.charts-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.charts {
+  display: flex;
+  justify-content: center; /* Center the charts horizontally */
+  gap: 20px;
+}
+
+.chart-container {
+  width: 25%; /* Reduced width for smaller charts */
+  min-width: 150px; /* Minimum width to prevent charts from becoming too small */
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center; /* Center the chart itself */
+}
+
+/* Optional: Adjust the size of the chart canvas */
+.chart-container canvas {
+  width: 100% !important;
+  height: auto !important;
+  padding: relative;
+}
+
+/* Font Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
+}
+
+button.addInc {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.add-btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 0px;
+  width: 120px;
+  font-size: 15px;
+}
+
+button.addInc:hover,
+.add-btn:hover {
+  background-color: #ff1493;
+}
+
+/* Reordered Input Fields */
+.in-come {
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.expname {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.e-date {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.amount {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.payment-method {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.nameDiv,
+.dateAmt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.fontz {
+  font-size: 35px;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+.fontzinc {
+  font-size: 25px;
+}
+
+/* Hover effect for images */
+.image-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.image-hover:hover {
+  transform: scale(1.1); /* Enlarge image slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
